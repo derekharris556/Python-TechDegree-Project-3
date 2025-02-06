@@ -1,5 +1,5 @@
 # Import your Game class
-from phrase-hunter.game import Game
+from phrasehunter.game import Game
 
 # Create your Dunder Main statement.
 if __name__ == '__main__':
