@@ -39,7 +39,7 @@ class Game:
         # Checks is 1 letter, and is an alphabetic character
         while True:
             guess = input("Guess a letter: ").lower().strip()
-            if guess == 'solve':
+            if guess == '0':
                 return self.solve_puzzle()
             elif len(guess) == 1 and guess.isalpha():
                 return guess
@@ -119,7 +119,7 @@ class Game:
         # begin the actual game loop
         while True:
             print(f"\n# of Misses: {self.missed}")
-            print('Enter "solve" to solve the puzzle.')
+            print('Enter "0" to solve the puzzle.')
             print("Guess this famous movie quote:")
             print(self.active_phrase.display_phrase(self.guesses))
             print()
