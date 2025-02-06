@@ -119,6 +119,7 @@ class Game:
         # begin the actual game loop
         while True:
             print(f"\n# of Misses: {self.missed}")
+            print('Enter "solve" to solve the puzzle.')
             print("Guess this famous movie quote:")
             print(self.active_phrase.display_phrase(self.guesses))
             print()
